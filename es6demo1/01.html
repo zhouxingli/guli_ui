@@ -1,0 +1,37 @@
+<script>
+ //1.变量的定义   
+     //1 创建代码块，定义变量
+     {
+    //js定义
+    var a=1;
+    //es6中定义
+    let b=2;
+     }
+      //2在代码块 外面输出
+    console.log(a);
+    //console.log(b);//Uncaught ReferenceError: b is not defined
+//2.多次定义变量
+    var a = 10
+   var a = 20
+
+   let m = 10
+   //let m = 20 //Uncaught SyntaxError: Identifier 'm' has already been declared
+
+    console.log(a)
+    console.log(m) 
+//3.常量的定义
+    const PI =1;
+    //常量值一旦定义，不能改变
+   // PI = 3  //Uncaught TypeError: Assignment to constant variable.
+    //定义常量必须初始化
+    //const AA  //Uncaught SyntaxError: Missing initializer in const declaration
+
+//4.数组定义
+    //传统写法
+    let A=1,B=2,C=3
+    console.log(A, B, C)
+
+    //es6写法
+    let [x,y,z] = [10,20,30]
+    console.log(x, y, z)
+</script>
